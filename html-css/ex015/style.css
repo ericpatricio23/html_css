@@ -1,0 +1,27 @@
+/* Define um fundo para visualizar a margem */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* A caixa que demonstra o modelo */
+.caixa {
+  background-color: lightblue;       /* Cor do conteúdo */
+  width: 200px;
+  height: 100px;
+
+  padding: 20px;                     /* Espaço interno */
+  border: 5px solid blue;            /* Borda */
+  margin: 30px;                      /* Espaço externo */
+
+  box-sizing: content-box;           /* Modelo padrão */
+}
+
+/* Linha auxiliar para mostrar o espaço da margem */
+body::before {
+  content: "Margem (30px)";
+  display: block;
+  background-color: #ddd;
+  padding: 10px;
+  text-align: center;
+}

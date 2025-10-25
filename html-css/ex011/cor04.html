@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Faz o layout se ajustar corretamente em telas de celular e desktop -->
+
+  <title>Fichamento – Tipografia em CSS</title>
+  <!-- Título que aparece na aba do navegador -->
+   
+
+  <!-- Importa a fonte 'Poppins' do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS interno da página -->
+  <style>
+    /* ===== Estilo geral da página ===== */
+    body {
+      font-family: 'Poppins', sans-serif; /* Define a fonte principal */
+      background-color: #f4f4f9;          /* Cor de fundo suave */
+      color: #333;                        /* Cor padrão do texto */
+      margin: 0;                          /* Remove margens padrão do navegador */
+      padding: 30px;                      /* Espaçamento interno nas bordas da página */
+      line-height: 1.6;                   /* Espaçamento vertical entre linhas */
+    }
+
+    /* ===== Títulos (h1 e h2) ===== */
+    h1, h2 {
+      color: #2d2d75;                     /* Define a cor azul escura dos títulos */
+    }
+
+    h1 {
+      text-align: center;                 /* Centraliza o título principal */
+      margin-bottom: 40px;                /* Espaço abaixo do título */
+      font-size: 2.2rem;                  /* Tamanho grande do título principal */
+    }
+
+    /* ===== Cada seção (bloco do fichamento) ===== */
+    section {
+      background: white;                  /* Fundo branco */
+      border-radius: 12px;                /* Cantos arredondados */
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+      padding: 20px;                      /* Espaço interno */
+      margin-bottom: 20px;                /* Espaço entre os blocos */
+    }
+
+    /* ===== Blocos de código (texto pré-formatado) ===== */
+    pre {
+      background: #222;                   /* Fundo escuro tipo terminal */
+      color: #00ff9d;                     /* Cor verde neon para o texto */
+      padding: 15px;                      /* Espaçamento interno */
+      border-radius: 8px;                 /* Bordas arredondadas */
+      font-size: 0.9rem;                  /* Tamanho um pouco menor */
+      overflow-x: auto;                   /* Adiciona rolagem horizontal se o código for longo */
+    }
+
+    /* ===== Blocos de explicação (notas) ===== */
+    .note {
+      background: #eef4ff;                /* Fundo azul claro */
+      border-left: 5px solid #2d2d75;     /* Barra azul na lateral esquerda */
+      padding: 10px 15px;                 /* Espaçamento interno */
+      border-radius: 6px;                 /* Bordas arredondadas */
+      margin-top: 10px;                   /* Espaço acima da nota */
+      font-size: 0.95rem;                 /* Tamanho de texto ligeiramente menor */
+    }
+
+    /* ===== Listas ===== */
+    ul {
+      margin: 0;                          /* Remove margens padrão */
+      padding-left: 20px;                 /* Adiciona espaço antes dos marcadores */
+    }
+
+    /* ===== Bloco verde de boas práticas ===== */
+    .checklist {
+      background: #dff7e1;                /* Fundo verde claro */
+      border-left: 5px solid #28a745;     /* Barra verde lateral */
+      padding: 10px 15px;                 /* Espaçamento interno */
+      border-radius: 6px;                 /* Bordas arredondadas */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Título principal da página ===== -->
+  <h1>🧠 Fichamento: Tipografia em CSS</h1>
+
+  <!-- ===== Seção 1: Fontes ===== -->
+  <section>
+    <h2>1️⃣ Fontes</h2>
+    <pre>font-family: 'Poppins', Arial, sans-serif;</pre>
+    <!-- Mostra o código CSS em um bloco pré-formatado -->
+    <div class="note">
+      <!-- Bloco de explicação da seção -->
+      Define a fonte do texto. Sempre coloque fontes alternativas e uma família genérica.
+      <ul>
+        <li><b>serif:</b> com pontinhas (ex: Times New Roman)</li>
+        <li><b>sans-serif:</b> sem pontas (ex: Arial)</li>
+        <li><b>monospace:</b> espaçamento fixo (ex: Courier)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Seção 2: Tamanho da Fonte ===== -->
+  <section>
+    <h2>2️⃣ Tamanho da Fonte</h2>
+    <pre>font-size: 16px;
+font-size: 1rem;</pre>
+    <div class="note">
+      Use <b>rem</b> ou <b>em</b> para responsividade. <br>
+      Exemplo: <code>1rem = 16px</code> (padrão do navegador).
+    </div>
+  </section>
+
+  <!-- ===== Seção 3: Espessura e Estilo ===== -->
+  <section>
+    <h2>3️⃣ Espessura e Estilo</h2>
+    <pre>font-weight: 700;
+font-style: italic;
+font-variant: small-caps;</pre>
+    <div class="note">
+      Controla o peso (grossura da fonte), estilo (itálico) e variação (versalete).
+    </div>
+  </section>
+
+  <!-- ===== Seção 4: Espaçamento e Altura ===== -->
+  <section>
+    <h2>4️⃣ Espaçamento e Altura</h2>
+    <pre>line-height: 1.5;
+letter-spacing: 0.05em;
+word-spacing: 0.2em;</pre>
+    <div class="note">
+      Ajuste os espaçamentos para melhorar a legibilidade do texto.
+    </div>
+  </section>
+
+  <!-- ===== Seção 5: Alinhamento e Transformação ===== -->
+  <section>
+    <h2>5️⃣ Alinhamento e Transformação</h2>
+    <pre>text-align: center;
+text-transform: uppercase;
+text-decoration: underline;</pre>
+    <div class="note">
+      Alinha o texto, muda entre maiúsculas/minúsculas e adiciona decorações.
+    </div>
+  </section>
+
+  <!-- ===== Seção 6: Cor e Sombra ===== -->
+  <section>
+    <h2>6️⃣ Cor e Sombra</h2>
+    <pre>color: #333;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.3);</pre>
+    <div class="note">
+      Define a cor do texto e adiciona uma sombra suave para destaque.
+    </div>
+  </section>
+
+  <!-- ===== Seção 7: Fontes Externas ===== -->
+  <section>
+    <h2>7️⃣ Fontes Externas (Google Fonts)</h2>
+    <pre>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}</pre>
+    <div class="note">
+      Permite usar fontes personalizadas hospedadas no Google Fonts.
+    </div>
+  </section>
+
+  <!-- ===== Último bloco: Boas Práticas ===== -->
+  <section class="checklist">
+    <h2>✅ Boas Práticas</h2>
+    <ul>
+      <li>Use no máximo <b>2–3 fontes</b></li>
+      <li>Prefira unidades <b>relativas (em/rem)</b></li>
+      <li>Mantenha bom <b>contraste</b> entre fundo e texto</li>
+      <li>Crie <b>hierarquia visual</b> com tamanhos e pesos diferentes</li>
+    </ul>
+  </section>
+
+</body>
+</html>
